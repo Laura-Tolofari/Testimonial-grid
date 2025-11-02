@@ -1,0 +1,127 @@
+body {
+    background-color: hsl(214, 17%, 92%);
+}
+.testimonialContainer{
+    padding: 20px;
+    display: grid;
+    gap: 25px;
+    margin: 50px 10px;
+}
+.imgText{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.coloredBorder{
+    border: 2px solid  hsl(264, 82%, 80%);
+}
+.cliffInfo{
+    background-color:  hsl(263, 55%, 52%);
+    padding: 25px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.waltersInfo{
+    background-color: hsl(217, 19%, 35%);
+    padding: 25px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.harmonInfo{
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    color: hsl(224, 10%, 45%);
+    border-radius: 10px;
+}
+.abramsInfo{
+    background-color: hsl(219, 29%, 14%);
+    padding: 25px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.whittleInfo{
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    color: hsl(224, 10%, 45%);
+    border-radius: 10px;
+}
+.nameText{
+    padding-left: 15px;
+    margin-top: -10px;
+}
+h2{
+   font-size: 20px;  
+    font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h4{
+    margin-bottom: 0;
+}
+p{
+    margin-top: 5px;
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.whiteP{
+    color: hsl(0, 0%, 100%);
+}
+ 
+/*tablet */
+
+@media (min-width:600px) and (max-width:899px){
+    .testimonialContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*desktop*/
+
+@media (min-width:900px) {
+    .testimonialContainer{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; 
+        margin: 30px 10px;
+    }
+    .cliffInfo{
+        grid-column: 1/span 2;
+    }
+    .whittleInfo{
+        grid-column: 4;
+        grid-row: 1/span 2;
+     }
+     .kp{
+         letter-spacing: 0.5px;
+     }
+    .abramsInfo{
+        grid-column: 2/span 2;
+    }
+    
+    .cliffInfo, .waltersInfo, .harmonInfo, .abramsInfo, .whittleInfo {
+        padding: 15px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+     h2{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    .vText{
+        margin-top: 2px;
+    }
+}
